@@ -1,0 +1,30 @@
+X老师让小宁同学查看一个网页的源代码，但小宁同学发现鼠标右键好像不管用了。
+打开网页发现右键无法使用，利用View-source或者F12可以查看，得到flag.
+
+
+
+
+
+view-source:网址
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Where is the FLAG</title>
+</head>
+<body>
+<script>
+document.oncontextmenu=new Function("return false")
+document.onselectstart=new Function("return false")
+</script>
+
+
+<h1>FLAG is not here</h1>
+
+
+<!-- cyberpeace{f2c50620bc92e5213cc7f0554bde76b4} -->
+
+</body>
+</html>
